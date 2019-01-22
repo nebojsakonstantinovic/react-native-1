@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 
-const AlbumList = () => {
-  return (
-    <View>
-      <Text>Album List!!!</Text>
-    </View>
-  );
-};
+class AlbumList extends Component {
+  componentWillMount() {
+    console.log('patka');
+  }
+
+  render() {
+    return (
+      <View>
+        <Text>Album List!!!</Text>
+      </View>
+    );
+  }
+}
 
 export default AlbumList;
